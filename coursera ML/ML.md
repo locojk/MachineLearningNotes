@@ -660,4 +660,4 @@ plt.show()
 
 
 
-![image info](./image/)
+![image info](./image/...)
