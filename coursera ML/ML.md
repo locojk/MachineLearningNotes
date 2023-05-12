@@ -36,7 +36,7 @@ Learns from being given "**Right answers**"
 
 Ex:
 
-![image info](./image/Screenshot 2023-04-16 at 3.56.45 PM.png)
+![image info](./image/Screenshot%202023-04-16%20at%203.56.45%20PM.png)
 
 
 
@@ -45,7 +45,7 @@ Ex:
 - Predict a number 
 - Infinitely many possible outputs
 
-![image info](./image/Screenshot 2023-04-16 at 4.04.52 PM.png)
+![image info](./image/Screenshot%202023-04-16%20at%204.04.52%20PM.png)
 
 
 
@@ -53,15 +53,15 @@ Ex:
 
 - predic categories (can be non-number) with small number of possible outputs
 
-![image info](./image/Screenshot 2023-04-16 at 4.13.20 PM.png)
+![image info](./image/Screenshot%202023-04-16%20at 4.13.20%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-04-16 at 4.17.05 PM.png)
+![image info](./image/Screenshot%202023-04-16%20at%204.17.05%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-04-16 at 4.21.50 PM.png)
+![image info](./image/Screenshot%202023-04-16%20at%204.21.50%20PM.png)
 
 The learning algorithm has to decide **how to fit a boundary line** through this data
 
@@ -104,7 +104,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-04-27 at 3.14.57 PM.png)
+![image info](./image/Screenshot%202023-04-27%20at%203.14.57%20PM.png)
 
 **w,b also called parameters, coefficients, weight**
 
@@ -117,7 +117,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-04-28 at 5.46.43 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%205.46.43%20PM.png)
 
 - **Division 2** in **1/2m** just to make following calculation neater
 - Differenr people may use different cost function for different application
@@ -128,7 +128,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 #### - Find minimize of cost function
 
-![image info](./image/Screenshot 2023-04-28 at 5.53.20 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%205.53.20%20PM.png)
 
 
 
@@ -136,25 +136,25 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-04-28 at 6.00.05 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.00.05%20PM.png)
 
 
 
 **When w = 0.5:**
 
-![image info](./image/Screenshot 2023-04-28 at 6.03.05 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.03.05%20PM.png)
 
 
 
 **When w = 0:**
 
-![image info](./image/Screenshot 2023-04-28 at 6.04.39 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.04.39%20PM.png)
 
 
 
 **The final plot is:** 
 
-![image info](./image/Screenshot 2023-04-28 at 6.05.58 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.05.58 PM.png)
 
 **When w = 1, J(w) is minimum**
 
@@ -162,9 +162,9 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 #### **J(w,b)**
 
-![image info](./image/Screenshot 2023-04-28 at 6.11.34 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.11.34%20PM.png)
 
-![image info](./image/Screenshot 2023-04-28 at 6.18.17 PM.png)
+![image info](./image/Screenshot%202023-04-28%20at%206.18.17%20PM.png)
 
 
 
@@ -174,13 +174,13 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - Gradient descent is **an algorithm for finding values of parameters w and b** that minimize the cost function J
 
-  ![image info](./image/Screenshot 2023-04-30 at 3.09.21 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.09.21%20PM.png)
 
   
 
 - How gradient descent work?
 
-  ![image info](./image/Screenshot 2023-04-30 at 3.18.00 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.18.00%20PM.png)
 
 
 
@@ -194,7 +194,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - **Simultaneously**(同时) update **w** and **b**
 
-  ![image info](./image/Screenshot 2023-04-30 at 3.45.13 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.45.13%20PM.png)
 
 
 
@@ -202,9 +202,9 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - d/dw J(w) is the **slope**
 
-  ![image info](./image/Screenshot 2023-04-30 at 3.52.58 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.52.58%20PM.png)
   
-  ![image info](./image/Screenshot 2023-04-30 at 3.52.58 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.52.58%20PM.png)
 
 
 
@@ -212,35 +212,35 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - Find learning rate
 
-  ![image info](./image/Screenshot 2023-04-30 at 3.57.57 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%203.57.57%20PM.png)
 
   
 
-  ![image info](./image/Screenshot 2023-04-30 at 4.00.17 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%204.00.17%20PM.png)
 
   
 
   - Detivative 会先大后小
 
-    ![image info](./image/Screenshot 2023-04-30 at 4.03.52 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%204.03.52%20PM.png)
 
   
 
   #### Gradient descent for linear regression
 
-  ![image info](./image/Screenshot 2023-04-30 at 4.06.12 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%204.06.12%20PM.png)
 
   
 
   - **Global minmum** is what we want finally (**local mimimum** not good enough)
 
-    ![image info](./image/Screenshot 2023-04-30 at 4.11.46 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%204.11.46%20PM.png)
 
   
 
   - **Batch gradient descent**
   
-    ![image info](./image/Screenshot 2023-04-30 at 4.13.16 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%204.13.16%20PM.png)
 
 
 
@@ -250,13 +250,13 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 #### Example:
 
-![image info](./image/Screenshot 2023-05-05 at 6.41.17 PM.png)
+![image info](./image/Screenshot%202023-05-05%20at%206.41.17%20PM.png)
 
-![image info](./image/Screenshot 2023-05-05 at 6.47.11 PM.png)
+![image info](./image/Screenshot%202023-05-05%20at%206.47.11%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-05-05 at 6.50.27 PM.png)
+![image info](./image/Screenshot%202023-05-05%20at%206.50.27%20PM.png)
 
 
 
@@ -267,7 +267,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 - Make code shorter and make it run much more efficiently
 - Take advantage of modern **numerical linear algebra libraries (NumPy)**
 
-![image info](./image/Screenshot 2023-05-08 at 7.36.38 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%207.36.38%20PM.png)
 
 
 
@@ -276,21 +276,21 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-05-08 at 7.41.24 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%207.41.24%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-05-08 at 7.49.40 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%207.49.40%20PM.png)
 
 
 
 ### Gradient descent in multiple linear regression
 
-![image info](./image/Screenshot 2023-05-08 at 8.10.19 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%208.10.19%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-05-08 at 8.15.46 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%208.15.46%20PM.png)
 
 - **Normal equation** mwthod may be used in machibe learning libraries that implement linear regression
 - **But Gradient descent is ts the recommended method!**
@@ -302,13 +302,13 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 - Very small changes to w1 can have large impact, so w1 should be small
 - It takes a much larger change in w2 in order to change the presictions much, so w2 should be small
 
-![image info](./image/Screenshot 2023-05-08 at 9.45.41 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%209.45.41 PM.png)
 
 
 
 ### Scale features: Performing some transformation of your training data (x1 and x2 is scaled both 0-1)
 
-![image info](./image/Screenshot 2023-05-08 at 9.48.12 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%209.48.12%20PM.png)
 
 - Can speed gradient descent significantly
 
@@ -320,7 +320,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 #### Feature scaling
 
-![image info](./image/Screenshot 2023-05-08 at 9.53.04 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%209.53.04%20PM.png)
 
 
 
@@ -328,13 +328,13 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - Have both negtive and positive number
 
-![image info](./image/Screenshot 2023-05-08 at 10.00.06 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.00.06%20PM.png)
 
 
 
 #### Z-score normalization
 
-![image info](./image/Screenshot 2023-05-08 at 10.02.43 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.02.43%20PM.png)
 
 
 
@@ -342,19 +342,19 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 ### No harm to carry feature scaling
 
-![image info](./image/Screenshot 2023-05-08 at 10.05.22 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.05.22%20PM.png)
 
 
 
 ## Checking gradient descent for convergence
 
-![image info](./image/Screenshot 2023-05-08 at 10.11.48 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.11.48%20PM.png)
 
 
 
 ## Choosing the learning rate
 
-![image info](./image/Screenshot 2023-05-08 at 10.15.24 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.15.24%20PM.png)
 
 - **One important trade-off is that if learning rate is too small, take a lot of iterations to converge**
 
@@ -362,7 +362,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 ### Trying the value for learning rate
 
-![image info](./image/Screenshot 2023-05-08 at 10.20.50 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.20.50%20PM.png)
 
 
 
@@ -370,18 +370,18 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 - The **choice of feature**s can have a huge impact on your learning algorithm's performance
 
-![image info](./image/Screenshot 2023-05-08 at 10.31.31 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.31.31%20PM.png)
 
 ## Polynomial regression
 
 - **Curve regression**
 - **Feature scaling is very important**
 
-![image info](./image/Screenshot 2023-05-08 at 10.34.35 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.34.35%20PM.png)
 
 
 
-![image info](./image/Screenshot 2023-05-08 at 10.36.08 PM.png)
+![image info](./image/Screenshot%202023-05-08%20at%2010.36.08 PM.png)
 
 
 
@@ -391,17 +391,17 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-05-01 at 1.46.23 AM.png)
+![image info](./image/Screenshot%202023-05-01%20at%201.46.23%20AM.png)
 
 
 
 ### Logistic regression (Curve)
 
-![image info](./image/Screenshot 2023-05-01 at 1.50.08 AM.png)
+![image info](./image/Screenshot%202023-05-01%20at%201.50.08%20AM.png)
 
 
 
-![image info](./image/Screenshot 2023-05-01 at 1.51.48 AM.png)
+![image info](./image/Screenshot%202023-05-01%20at%201.51.48%20AM.png)
 
 
 
@@ -409,7 +409,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-![image info](./image/Screenshot 2023-05-01 at 1.55.29 AM.png)
+![image info](./image/Screenshot%202023-05-01%20at%201.55.29%20AM.png)
 
 
 
@@ -492,23 +492,23 @@ addpt = plt_one_addpt_onclick( x_train,y_train, w_in, b_in, logistic=True)
 
 
 
-![image info](./image/Screenshot 2023-05-11 at 11.53.01 PM.png)
+![image info](./image/Screenshot%202023-05-11%20at%2011.53.01%20PM.png)
 
 
 
 **Set threshold(临界) above which you predict y is one**
 
-![image info](./image/Screenshot 2023-05-05 at 3.13.08 PM.png)
+![image info](./image/Screenshot%202023-05-05%20at%203.13.08%20PM.png)
 
 
 
 - **Non-linear decision boundaries**
 
-  ![image info](./image/Screenshot 2023-05-05 at 6.03.41 PM.png)
+  ![image info](./image/Screenshot%202023-05-05%20at%206.03.41%20PM.png)
 
   
   
-  ![image info](./image/Screenshot 2023-05-05 at 6.07.38 PM.png)
+  ![image info](./image/Screenshot%202023-05-05%20at%206.07.38%20PM.png)
 
 ### How to make Decsion Boundary in Python
 
@@ -588,15 +588,15 @@ plt.show()
 
   Then have linear regression modle of vectors
 
-  ![image info](./image/Screenshot 2023-04-30 at 9.54.11 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%209.54.11%20PM.png)
 
   
 
   - **Cost function for each user j to learn w, b**
 
-  ![image info](./image/Screenshot 2023-04-30 at 10.58.52 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%2010.58.52%20PM.png)
 
-  ![image info](./image/Screenshot 2023-04-30 at 11.01.04 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%2011.01.04%20PM.png)
 
   
 
@@ -610,13 +610,13 @@ plt.show()
 
 - **Can take reasonable guess** at waht lists a feature
 
-  ![image info](./image/Screenshot 2023-04-30 at 11.35.25 PM.png)
+  ![image info](./image/Screenshot%202023-04-30%20at%2011.35.25%20PM.png)
 
   
 
   - **Cost function for item i to learn x(i)** 
 
-    ![image info](./image/Screenshot 2023-04-30 at 11.40.47 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%2011.40.47%20PM.png)
 
   
 
@@ -626,9 +626,9 @@ plt.show()
     - The underlying idea behind collaborative filtering is that people with similar tastes in the past are likely to have similar tastes in the future.
     - It does not require information about the items themselves or their characteristics, and it can handle new items that have not been rated before. 
 
-    ![image info](./image/Screenshot 2023-04-30 at 11.47.53 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%2011.47.53%20PM.png)
 
-    ![image info](./image/Screenshot 2023-04-30 at 11.54.40 PM.png)
+    ![image info](./image/Screenshot%202023-04-30%20at%2011.54.40%20PM.png)
 
 
 
@@ -638,25 +638,25 @@ plt.show()
 
 - Many way to find 1 or 0
 
-  ![image info](./image/Screenshot 2023-05-01 at 12.54.42 AM.png)
+  ![image info](./image/Screenshot%202023-05-01%20at%2012.54.42%20AM.png)
 
-  ![image info](./image/Screenshot 2023-05-01 at 12.54.42 AM.png)
+  ![image info](./image/Screenshot%202023-05-01%20at%2012.54.42%20AM.png)
 
   
 
-  ![image info](./image/Screenshot 2023-05-01 at 12.57.31 AM.png)
+  ![image info](./image/Screenshot%202023-05-01%20at%2012.57.31%20AM.png)
 
   
 
 - **Using logistic regression**
 
-  ![image info](./image/Screenshot 2023-05-01 at 1.04.11 AM.png)
+  ![image info](./image/Screenshot%202023-05-01%20at%201.04.11%20AM.png)
 
   
 
   - **Binary cross entropy cost function**
 
-    ![image info](./image/Screenshot 2023-05-01 at 1.09.01 AM.png)
+    ![image info](./image/Screenshot%202023-05-01%20at%201.09.01%20AM.png)
 
 
 
