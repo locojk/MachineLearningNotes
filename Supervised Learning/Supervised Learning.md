@@ -395,7 +395,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-### Logistic regression (Curve)
+## Logistic regression (Curve)
 
 ![image info](./image/Screenshot%202023-05-01%20at%201.50.08%20AM.png)
 
@@ -413,82 +413,9 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-#### How to do that in Python
-
-```python
-import numpy as np
-%matplotlib widget
-import matplotlib.pyplot as plt
-from plt_one_addpt_onclick import plt_one_addpt_onclick
-from lab_utils_common import draw_vthresh
-plt.style.use('./deeplearning.mplstyle')
-
-# Input is an array. 
-input_array = np.array([1,2,3])
-exp_array = np.exp(input_array)
-
-# NumPy has a function called exp(), which offers a convenient way to calculate the exponential (𝑒^𝑧) of all elements in the input array (z).
-print("Input to exp:", input_array)
-print("Output of exp:", exp_array)
-
-# Input is a single number
-input_val = 1  
-exp_val = np.exp(input_val)
-
-print("Input to exp:", input_val)
-print("Output of exp:", exp_val)
-
-def sigmoid(z):
-    """
-    Compute the sigmoid of z
-
-    Args:
-        z (ndarray): A scalar, numpy array of any size.
-
-    Returns:
-        g (ndarray): sigmoid(z), with the same shape as z
-         
-    """
-
-    g = 1/(1+np.exp(-z))
-   
-    return g
-  
-  
-# Generate an array of evenly spaced values between -10 and 10
-z_tmp = np.arange(-10,11)
-
-# Use the function implemented above to get the sigmoid values
-y = sigmoid(z_tmp)
-
-# Code for pretty printing the two arrays next to each other
-np.set_printoptions(precision=3) 
-print("Input (z), Output (sigmoid(z))")
-print(np.c_[z_tmp, y])
-
-# Plot z vs sigmoid(z)
-fig,ax = plt.subplots(1,1,figsize=(5,3))
-ax.plot(z_tmp, y, c="b")
-
-ax.set_title("Sigmoid function")
-ax.set_ylabel('sigmoid(z)')
-ax.set_xlabel('z')
-draw_vthresh(ax,0)
-
-# Logistic Regression
-x_train = np.array([0., 1, 2, 3, 4, 5])
-y_train = np.array([0,  0, 0, 1, 1, 1])
-
-w_in = np.zeros((1))
-b_in = 0
-
-plt.close('all') 
-addpt = plt_one_addpt_onclick( x_train,y_train, w_in, b_in, logistic=True)
-```
 
 
-
-#### Decision Boundary
+## Decision Boundary
 
 
 
@@ -510,154 +437,144 @@ addpt = plt_one_addpt_onclick( x_train,y_train, w_in, b_in, logistic=True)
   
   ![image info](./image/Screenshot%202023-05-05%20at%206.07.38%20PM.png)
 
-### How to make Decsion Boundary in Python
 
-```python
-import numpy as np
-%matplotlib widget
-import matplotlib.pyplot as plt
-from lab_utils_common import plot_data, sigmoid, draw_vthresh
-plt.style.use('./deeplearning.mplstyle')
 
-# Data set
-X = np.array([[0.5, 1.5], [1,1], [1.5, 0.5], [3, 0.5], [2, 2], [1, 2.5]])
-y = np.array([0, 0, 0, 1, 1, 1]).reshape(-1,1) 
 
-# Plot Data
-fig,ax = plt.subplots(1,1,figsize=(4,4))
-plot_data(X, y, ax)
 
-ax.axis([0, 4, 0, 3.5])
-ax.set_ylabel('$x_1$')
-ax.set_xlabel('$x_0$')
-plt.show()
+## Cost function for logistic regression
 
-# Plot sigmoid(z) over a range of values from -10 to 10
-z = np.arange(-10,11)
 
-fig,ax = plt.subplots(1,1,figsize=(5,3))
-# Plot z vs sigmoid(z)
-ax.plot(z, sigmoid(z), c="b")
 
-ax.set_title("Sigmoid function")
-ax.set_ylabel('sigmoid(z)')
-ax.set_xlabel('z')
-draw_vthresh(ax,0)
+- Target lable y is only 0 or 1
+- How can we chose **w** and b
 
-# Choose values between 0 and 6
-x0 = np.arange(0,6)
 
-x1 = 3 - x0
-fig,ax = plt.subplots(1,1,figsize=(5,4))
 
-# Plot the decision boundary
-ax.plot(x0,x1, c="b")
-ax.axis([0, 4, 0, 3.5])
+- Squared error cost function for logistic is non-convex
+- Lots of local minmum
+- Need another cost function to make it convex to use gradient dscent
 
-# Fill the region below the line
-ax.fill_between(x0,x1, alpha=0.2)
 
-# Plot the original data
-plot_data(X,y,ax)
-ax.set_ylabel(r'$x_1$')
-ax.set_xlabel(r'$x_0$')
-plt.show()
-```
+
+### Loss Fucntion
+
+- x-axis is **model fucntion**
+- y-axis is **loss**
+- Loss apply yo single training example but cost apply to entire training example
+
+
+
+#### y is equal to 1
+
+![image info](./image/LF.png)
+
+
+
+#### y is equal to 0
+
+![image info](./image/Lf2.png)
+
+
+
+#### The cost function:
+
+- Cost function is a function of the entire training set, the average of the loss function on the individual training examples
+
+![image info](./image/cost.png)
+
+
+
+### Simplified loss function
+
+![image info](./image/SLF.png)
+
+![image info](./image/SLF2.png)
+
+- This cost fucntion is derived from statistics using a statistical principle
+- Maximum likehood estimation
+
+
+
+## Gradient Descent Implementation
+
+![image info](./image/LGD.png)
+
+- Their deriviavte is same but the defination of f is diff
+
+
+
+## Overfitting
+
+- **Bias**: if the algrothm is underfit the data meaning that it's just not even able to fit the training set well
+
+  
+
+- **Overfit**: if the data over fit the data too "Well", model may generalize new examples poorly, if your tarining set were just evenr a little bit different, the function that the algorithm fits could end up being totally different (High variance)
+- Ex: large size lead to low price like the third picture
+
+![image info](./image/OF.png)
+
+![image info](./image/OF2.png)
+
+
+
+### Regularization to Reduce Overfitting
+
+- Collect more tarining examples may works
+- Use less polynomial features may works (**Feature selection**), but useful features may loss
+
+
+
+#### **Regularization**
+
+- More gently reduce the impacts of some of reatures, reduce size of parameters
+
+![image info](./image/REa.png)
+
+
+
+![image info](./image/AF.png)
+
+
+
+### Cost function with regularization
+
+- If have a lot of features, don't know which are the most improtant fdeatures and which ones to penalize
+- Penalize all of the features(penalize all the parameters)
+
+- lambda is regularization parameter
+
+![image info](./image/Rg.png)
+
+
+
+- This new cost function trades off two goals:
+- Trying to minimize thisfirst term encourages the algorithm to fit the training data well by minimizing the squared differences of the predictions and actual value
+- Trying to minimize the second term, the algorithm also tries to keep the parameters wj small which tend to reduce overfitting
+- If lambda is very large, to minimize the cost function wj must be very small(close to 0)
+
+![image info](./image/Lam.png)
+
+
+
+### Derivative
+
+![image info](./image/rd.png)
+
+![image info](./image/im.png)
+
+
+
+- Shrink wj, mutiplying some percent to wj (like 0.998)
+
+![image info](./image/shrink.png)
+
+
+
+### Regularized logistic regression
+
+![image info](./image/LR.png)
 
 
 
 ![image info](./image/)
-
-
-
-# Recommendation System
-
-
-
-### Using per-item features
-
-#### Example: Predicting moview ratings
-
-- Some number of users and items
-
-![image info](./image/image-20230430214739922.png)
-
-
-
-- **Add feature for each movie**
-
-  Then have linear regression modle of vectors
-
-  ![image info](./image/Screenshot%202023-04-30%20at%209.54.11%20PM.png)
-
-  
-
-  - **Cost function for each user j to learn w, b**
-
-  ![image info](./image/Screenshot%202023-04-30%20at%2010.58.52%20PM.png)
-
-  ![image info](./image/Screenshot%202023-04-30%20at%2011.01.04%20PM.png)
-
-  
-
-- **PS: 后半段橙色的是 Regularization term**
-
-
-
-#### What if there is no feature for items (Collaborative  filtering)
-
-- **w(j) * x(i)** should approximately equal to actual rate
-
-- **Can take reasonable guess** at waht lists a feature
-
-  ![image info](./image/Screenshot%202023-04-30%20at%2011.35.25%20PM.png)
-
-  
-
-  - **Cost function for item i to learn x(i)** 
-
-    ![image info](./image/Screenshot%202023-04-30%20at%2011.40.47%20PM.png)
-
-  
-
-  - **Collaborative filtering algroithm**
-
-    - Because multiple users have rated the same movie collaboratively, give you a sense of what this movie maybe like, allow you to guess what are approprite features for that movie, then allow you to predict how other users that havn't rated that movie ay decide to rate it in the future
-    - The underlying idea behind collaborative filtering is that people with similar tastes in the past are likely to have similar tastes in the future.
-    - It does not require information about the items themselves or their characteristics, and it can handle new items that have not been rated before. 
-
-    ![image info](./image/Screenshot%202023-04-30%20at%2011.47.53%20PM.png)
-
-    ![image info](./image/Screenshot%202023-04-30%20at%2011.54.40%20PM.png)
-
-
-
-#### Collaborative filtering with binary labels
-
-- **1** mean like **0** mean don't like
-
-- Many way to find 1 or 0
-
-  ![image info](./image/Screenshot%202023-05-01%20at%2012.54.42%20AM.png)
-
-  ![image info](./image/Screenshot%202023-05-01%20at%2012.54.42%20AM.png)
-
-  
-
-  ![image info](./image/Screenshot%202023-05-01%20at%2012.57.31%20AM.png)
-
-  
-
-- **Using logistic regression**
-
-  ![image info](./image/Screenshot%202023-05-01%20at%201.04.11%20AM.png)
-
-  
-
-  - **Binary cross entropy cost function**
-
-    ![image info](./image/Screenshot%202023-05-01%20at%201.09.01%20AM.png)
-
-
-
-![image info](./image/...)
