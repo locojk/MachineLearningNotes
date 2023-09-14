@@ -2,7 +2,25 @@
 
 
 
-### Using per-item features
+## Outline
+
+#### Non-personalized systems
+
+#### Collaborative Filtering
+
+#### Matrix Factorization (SVD)
+
+#### Deep Learning
+
+
+
+## Non-personalized systems
+
+
+
+​																																																																																																																								
+
+## Using per-item features
 
 #### Example: Predicting moview ratings
 
@@ -34,7 +52,7 @@
 
 
 
-#### What if there is no feature for items (Collaborative  filtering)
+## What if there is no feature for items (Collaborative  filtering)
 
 - **w(j) * x(i)** should approximately equal to actual rate
 

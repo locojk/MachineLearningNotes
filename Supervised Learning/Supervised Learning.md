@@ -2,7 +2,7 @@
 
 
 
-## 1. Definition
+## Definition
 
 - Field of study that gives computers the ability to learn without being explicity programmed
 
@@ -24,7 +24,7 @@
 
   
 
-## 2. Supervised learning
+## Supervised learning
 
 
 
@@ -67,7 +67,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 
-## 2.Unsupervised learning
+## Unsupervised learning
 
 
 
@@ -549,7 +549,7 @@ The learning algorithm has to decide **how to fit a boundary line** through this
 
 
 - This new cost function trades off two goals:
-- Trying to minimize thisfirst term encourages the algorithm to fit the training data well by minimizing the squared differences of the predictions and actual value
+- Trying to minimize this first term encourages the algorithm to fit the training data well by minimizing the squared differences of the predictions and actual value
 - Trying to minimize the second term, the algorithm also tries to keep the parameters wj small which tend to reduce overfitting
 - If lambda is very large, to minimize the cost function wj must be very small(close to 0)
 
